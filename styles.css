@@ -29,7 +29,7 @@ p, a{
     padding: 20px;
     /* transition: transform 0.2s; */
     width: 800px;
-    height: 400px;
+    height: 370px;
     display: flex;
     flex-direction: row;
 }
@@ -51,17 +51,28 @@ p, a{
 .calc-head, .amount-input, .term-rate, .term-input, .rate-input{
     display: flex;
     flex-direction: row;
+
+}
+.calc-head{
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
-.amount-input, .term-input, .rate-input{
-    border: 1px solid black;
+.mort-amount, .term-rate, .mort-type{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+
+.amount-input, .term-input, .rate-input, .type-input{
+    border: 0.7px solid black;
     border-radius: 3px;
     background: #c7ffff;
+    margin: 5px 5px 5px 0;
 }
 
-#amount input[type=text]:focus {
-    border: none;
-}
+
 
 /* Mortgage Amount */
 #dollar{
@@ -72,6 +83,10 @@ p, a{
 
 #amount{
     width:90%;
+    border: none;
+}
+
+#amount input[type=text]:focus {
     border: none;
 }
 
@@ -99,7 +114,16 @@ p, a{
     text-align: center;
 }
 
+/* Mortgage Type */
 
+.mort-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type-input{
+    background: #fff;
+}
 
 
 
