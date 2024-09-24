@@ -28,7 +28,7 @@ p, a{
         #93fffa33;
     padding: 20px;
     /* transition: transform 0.2s; */
-    width: 800px;
+    width: 750px;
     height: 370px;
     display: flex;
     flex-direction: row;
@@ -123,7 +123,31 @@ p, a{
 
 .type-input{
     background: #fff;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    font-weight: 700;
 }
 
 
+
+.checkmark{
+    padding: 5px;
+    color: #f3cf2c;
+}
+
+input[type=radio]:checked {
+    color: #f3cf2c;
+}
+  
+ 
+
+.type-input input:checked ~ .checkmark {
+    background-color: #f3cf2c;
+}
+
+#btn{
+    width: 75%;
+    font-size: 15px;
+    font-weight: 700;
+}
 
