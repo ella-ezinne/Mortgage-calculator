@@ -23,26 +23,19 @@ p, a{
 
 .main {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 0 20px
-        #93fffa33;
-    padding: 20px;
+        #0d0f0f33;
     /* transition: transform 0.2s; */
     width: 750px;
-    height: 370px;
+    height: 400px;
     display: flex;
     flex-direction: row;
 }
 
 .calculator{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.results{
-    width: 50%;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -149,5 +142,36 @@ input[type=radio]:checked {
     width: 75%;
     font-size: 15px;
     font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f3cf2c;
+}
+
+#calc{
+    width: 17px;
+    height: 17px;
+    padding: 5px 8px;
+}
+
+.results{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0px 20px 20px 50px;
+    background-color: #001329;
+}
+
+.results-text {
+    color: #eee;
+}
+
+.results-text p, .repayments p{
+    font-size: 13px;
+    color: #aaa;
+    padding-top: 10px;
 }
 

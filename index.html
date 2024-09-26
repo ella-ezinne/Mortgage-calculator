@@ -29,7 +29,7 @@
         <p>Mortgage Amount</p>
         <div class="amount-input">
           <h4 id="dollar">$</h4>
-          <input type="text" id="amount">
+          <input type="number" id="amount">
         </div>
 
       </div>
@@ -38,7 +38,7 @@
         <div class="mort-term">
           <p>Mortgage Term</p>
           <div class="term-input">
-            <input type="text" id="term">
+            <input type="number" id="term">
             <h4 id="years">years</h4>
           </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="int-rate">
           <p>Interest Rate</p>
           <div class="rate-input">
-            <input type="text" id="rate">
+            <input type="number" id="rate">
             <h4 id="percent">%</h4>
           </div>
         </div>
@@ -69,7 +69,7 @@
       </div>
 
       <button id="btn">
-        <img src="assets/images/icon-calculator.svg">
+        <img id="calc" src="assets/images/icon-calculator.svg">
         Calculate Repayments
       </button>
     </div>
@@ -87,24 +87,24 @@
     <div class="results">
       <div class="results-text">
         <h3>Your results</h3>
-        <p>
+        <p id="show">
           Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.
         </p>
+      </div>
+      <div class="repayments">
+        <p>Your monthly repayments</p>
+        
+        <h1 id="repay-amt"></h1>
 
-        <div class="repayments">
-          <p>Your monthly repayments</p>
-          
-          <h1 id="repay-amt"></h1>
+        <hr>
 
-          <hr>
-
-          <p>Total you'll repay over the term</p>
-          
-          <h3 id="total-repay"></h3>
-
-        </div>
+        <p>Total you'll repay over the term</p>
+        
+        <h3 id="total-repay"></h3>
 
       </div>
+
+      
 
     </div>
 
